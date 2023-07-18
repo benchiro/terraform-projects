@@ -40,3 +40,10 @@ variable "private_data_subnet_az2_cider" {
     description = " private data subnet az2 cider"
     type        = string 
 }
+
+# security group variable
+variable "ssh_location" {
+    default     = "0.0.0.0/0"
+    description = "the ip that can ssh into the ec2 intances"
+    type        = string 
+}
