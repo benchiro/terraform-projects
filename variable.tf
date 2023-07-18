@@ -47,3 +47,30 @@ variable "ssh_location" {
     description = "the ip that can ssh into the ec2 intances"
     type        = string 
 }
+#rds variables
+
+variable "database_snapshot_identifier" {
+    default     = "copy the ARN  from the dbs snapshot"
+    description = "the database arn "
+    type        = string 
+}
+
+
+variable "database_instance_class" {
+    default     = "db.t2.micro"
+    description = "the database arn "
+    type        = string 
+}
+
+variable "database_instance_identifier" {
+    default     = "copy intance name from the gui"
+    description = "the database arn"
+    type        = string
+}
+
+
+variable "multi_az_deployment" {
+    default     = false
+    description = "create a standby db"
+    type        = bool
+}
