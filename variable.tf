@@ -115,3 +115,16 @@ variable "ec2_key_pair_name" {
     description = "the ec2 ikey pair"
     type        =  string
 }
+
+#route 53 variables
+variable "domain_name" {
+    default     = "from GUI copy domain name form route 53"
+    description = "the ec2 ikey pair"
+    type        =  string
+}
+
+variable "record_name" {
+    default     = "www"
+    description = "sub domain name"
+    type        =  string
+}
