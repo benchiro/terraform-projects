@@ -74,3 +74,10 @@ variable "multi_az_deployment" {
     description = "create a standby db"
     type        = bool
 }
+
+#ALB variables
+variable "ssl_certificate_arn" {
+    default     = "paste arn from portal"
+    description = "ssl certificate arn"
+    type        =  string
+}
